@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react"
+import './Clock.css'
 
 export default function Clock(){
 
@@ -11,13 +12,9 @@ export default function Clock(){
     })
 
     return(
-        <div>
-            <h1>{cTime}</h1>
-
-            <p className="App-clock">
-                <button onClick = {() =>setTime(cTime)}>{cTime}</button>
-            </p>
-        </div>
+        <section className="App-Clock">
+                <div onClick = {() =>setTime(cTime)}>{cTime}</div>
+        </section>
     )
 
 }
